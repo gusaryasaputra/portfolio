@@ -1,5 +1,4 @@
 import { SocialMediaButton } from "../../_components";
-import Typed from "react-typed";
 
 export default function Hero() {
   return (
