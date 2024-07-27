@@ -1,12 +1,12 @@
 import Image from "next/image";
-import type { Portfolio } from "../../../../types";
-import { Button as CustomButton } from "../../../../_components";
+import type { Portfolio } from "../../../../_types/types";
+import { Button as CustomButton } from "../../..";
 
-type PortofolioItemProps = {
+type PortfolioItemProps = {
   item: Portfolio;
 };
 
-export default function PortofolioItem({ item }: PortofolioItemProps) {
+export default function PortfolioItem({ item }: PortfolioItemProps) {
   const buttonIsDisabled = !item.link;
 
   return (

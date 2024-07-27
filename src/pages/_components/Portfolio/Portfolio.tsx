@@ -1,6 +1,6 @@
 import { portfolioItems } from "@/consts/portfolio";
-import type { Portfolio } from "../../types";
-import { PortofolioItem } from "./_components";
+import type { Portfolio } from "../../_types/types";
+import { PortfolioItem } from "./_components";
 
 export default function Portfolio() {
   const items = [...portfolioItems] as Portfolio[];
@@ -17,7 +17,7 @@ export default function Portfolio() {
         </p>
         <div className="flex flex-wrap -mx-4">
           {items.map((item) => {
-            return <PortofolioItem key={item.id} item={item} />;
+            return <PortfolioItem key={item.id} item={item} />;
           })}
         </div>
       </div>
